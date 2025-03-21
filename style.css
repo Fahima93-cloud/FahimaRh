@@ -1,16 +1,18 @@
-ody {
-    font-family: Arial, sans-serif;
+body {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
     margin: 0;
     padding: 0;
-    text-align: center;
+    font-family: Arial, sans-serif;
 }
 header, footer {
-    background: #333;
+    background-color: #333;
     color: white;
-    padding: 10px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #ff6f61;
 }
 nav ul {
-    list-style: Arial;
+    list-style: none;
     padding: 0;
 }
 nav ul li {
@@ -20,23 +22,30 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
-nav ul li a:hover {
-    text-decoration: underline;
+main {
+    padding: 20px;
+    background-color: white;
+    border: 5px solid #ff6f61;
+    margin: 20px;
+    border-radius: 10px;
 }
 .home-container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    justify-content: space-around;
+    text-align: center;
 }
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-    padding: 30px;
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
-.product img {
-    width: 80px;
-    height: 80px;
+button:hover {
+    background-color: #d9534f;
 }
